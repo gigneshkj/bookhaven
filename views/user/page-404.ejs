@@ -1,0 +1,127 @@
+<!-- views/404.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Book Haven</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8b4589;
+            text-decoration: none;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 40px;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        
+        .user-menu {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .user-menu a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        main {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .error-image {
+            max-width: 200px;
+            margin-bottom: 30px;
+        }
+        
+        .error-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .error-message {
+            font-size: 16px;
+            color: #666;
+            max-width: 500px;
+            margin: 0 auto 40px;
+            line-height: 1.5;
+        }
+        
+        .home-button {
+            display: inline-block;
+            background-color: #8cc63f;
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .home-button:hover {
+            background-color: #78ad33;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">BOOK HAVEN</a>
+            
+            <nav class="nav-menu">
+                <a href="/">HOME</a>
+                <a href="/about">ABOUT</a>
+                <a href="/contact">CONTACT</a>
+            </nav>
+            
+            <div class="user-menu">
+                <a href="/wishlist">♥</a>
+                <a href="/account">👤</a>
+                <a href="/cart">🛒</a>
+            </div>
+        </header>
+        
+        <main>
+            <img src="/images/404-ufo.svg" alt="404 Error" class="error-image">
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-message">
+                The page you are looking for might have been removed had its name changed or is temporarily unavailable.
+            </p>
+            <a href="/" class="home-button">Home Page</a>
+        </main>
+    </div>
+</body>
+</html>
